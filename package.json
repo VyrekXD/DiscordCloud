@@ -1,18 +1,32 @@
+
 {
-  "name": "discordcloud",
-  "version": "1.0.0",
-  "description": "uWu",
+  "name": "discord-clouds",
+  "version": "a.1.0.0",
+  "description": "uwu",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "12.x",
+    "npm": "*"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "Vyrek",
+  "license": "MIT",
+  "homepage": "https://github.com/vyrekxd",
   "dependencies": {
     "discord.js": "^12.3.1",
     "fs": "0.0.1-security",
     "mongoose": "^5.10.5",
     "path": "^0.12.7"
   }
-}
+} 
