@@ -27,7 +27,7 @@ app.get("/", (request, response) => {
 });
 
 const listener = app.listen(bot.config.port, () => {
-  console.log("Escuchando desde el puerto" + listener.address().port);
+  console.log("Escuchando desde el puerto " + listener.address().port);
 });
 
 // -| Comandos |- //
