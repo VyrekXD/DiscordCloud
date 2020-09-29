@@ -13,6 +13,23 @@ bot.config = require('./config.js');
 bot.staffroles = require('./util-config/staff-roles');
 bot.everySupport = bot.staffroles.everySupport;
 
+// |- Express -| //
+
+const express = require("express");
+const app = express();
+
+
+app.use(express.static("public"));
+
+
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/views/index.html");
+});
+
+const listener = app.listen(bot.config.port, () => {
+  console.log("Escuchando desde el puerto" + listener.address().port);
+});
+
 // -| Comandos |- //
 
 (async function handleCommands(dir = "comandos") {
